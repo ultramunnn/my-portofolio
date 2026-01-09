@@ -62,7 +62,7 @@
             <div class="font-semibold">To:</div>
             <div>Muhammad Shirojul Munir</div>
             <div>Kediri, Indonesia</div>
-            <div class="mt-2 text-muted dark:text-muted-dark">ultramunnn@gmail.com</div>
+            <div class="mt-2 text-muted dark:text-muted-dark">munir63577@gmail.com</div>
           </div>
         </div>
       </div>
