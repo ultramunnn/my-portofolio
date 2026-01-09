@@ -1,0 +1,50 @@
+@config "../../tailwind.config.js";
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #f4ecd8;
+  --color-ink: #1b1b1b;
+  --color-muted: #5c5c5c;
+  --color-accent: #8b0000;
+  --color-border: #cbbfa5;
+
+  --color-paper-dark: #1a1a1a;
+  --color-ink-dark: #f4ecd8;
+  --color-muted-dark: #a3a3a3;
+  --color-border-dark: #3a3a3a;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.8;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.dark body {
+  background-color: var(--color-paper-dark);
+  color: var(--color-ink-dark);
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+/* hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+} */
