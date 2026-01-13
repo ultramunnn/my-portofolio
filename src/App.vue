@@ -1,8 +1,8 @@
 <script setup>
 import '@/assets/global.css'
-import Index from './pages/Index.vue';
+import Index from './pages/Index.vue'
 </script>
 
 <template>
-  <Index/>
+  <router-view></router-view>
 </template>

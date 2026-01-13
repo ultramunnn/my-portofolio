@@ -17,7 +17,8 @@
     "@tailwindcss/vite": "^4.1.18",
     "github-calendar": "^2.3.4",
     "tailwindcss": "^4.1.18",
-    "vue": "^3.5.25"
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

@@ -173,38 +173,40 @@ onMounted(fetchCalendar)
 
     <div v-else>
       <div class="gh-grid">
-        <div class="gh-months">
-          <span
-            v-for="m in monthPositions"
-            :key="`${m.name}-${m.index}`"
-            class="gh-month"
-            :style="{ left: `${m.index * (cellSize + cellGap)}px` }"
-          >
-            {{ m.name }}
-          </span>
-        </div>
-
-        <div class="gh-body">
-          <div class="gh-weekdays">
-            <span class="gh-weekday">Mon</span>
-            <span class="gh-weekday"></span>
-            <span class="gh-weekday">Wed</span>
-            <span class="gh-weekday"></span>
-            <span class="gh-weekday">Fri</span>
-            <span class="gh-weekday"></span>
-            <span class="gh-weekday"></span>
+        <div class="gh-grid-inner">
+          <div class="gh-months">
+            <span
+              v-for="m in monthPositions"
+              :key="`${m.name}-${m.index}`"
+              class="gh-month"
+              :style="{ left: `${m.index * (cellSize + cellGap)}px` }"
+            >
+              {{ m.name }}
+            </span>
           </div>
 
-          <div class="gh-weeks">
-            <div v-for="(week, index) in weeks" :key="index" class="gh-week">
-              <span
-                v-for="day in week.contributionDays"
-                :key="day.date"
-                class="gh-day"
-                :style="{ backgroundColor: day.contributionCount ? null : 'var(--gh-level-0)' }"
-                :data-level="Math.min(day.contributionCount, 4)"
-                :title="`${day.contributionCount} Contributions on ${day.date}`"
-              />
+          <div class="gh-body">
+            <div class="gh-weekdays">
+              <span class="gh-weekday">Mon</span>
+              <span class="gh-weekday"></span>
+              <span class="gh-weekday">Wed</span>
+              <span class="gh-weekday"></span>
+              <span class="gh-weekday">Fri</span>
+              <span class="gh-weekday"></span>
+              <span class="gh-weekday"></span>
+            </div>
+
+            <div class="gh-weeks">
+              <div v-for="(week, index) in weeks" :key="index" class="gh-week">
+                <span
+                  v-for="day in week.contributionDays"
+                  :key="day.date"
+                  class="gh-day"
+                  :style="{ backgroundColor: day.contributionCount ? null : 'var(--gh-level-0)' }"
+                  :data-level="Math.min(day.contributionCount, 4)"
+                  :title="`${day.contributionCount} Contributions on ${day.date}`"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -230,7 +232,7 @@ onMounted(fetchCalendar)
   border: 1px solid var(--color-border);
   border-radius: 0;
   padding: 16px;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 .gh-header {
@@ -298,8 +300,17 @@ onMounted(fetchCalendar)
 }
 
 .gh-grid {
-  min-width: 780px;
   overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+  touch-action: pan-x;
+}
+
+.gh-grid-inner {
+  min-width: 780px;
+  width: max-content;
 }
 
 .gh-months {
