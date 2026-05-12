@@ -22,7 +22,7 @@
         </p>
         <a
           class="mt-4 inline-flex items-center rounded-md border border-accent px-3 py-2 text-xs text-accent  transition-colors hover:bg-accent hover:text-paper dark:text-paper dark:hover:bg-accent dark:hover:text-paper"
-          href="https://drive.google.com/file/d/1-cSCSSNdFdJ0jW72O_c7JIB00fLCYWZT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1F_icOt4VZ65LmRC9ogjxn52LuRnLGxGh/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
