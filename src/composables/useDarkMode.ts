@@ -10,7 +10,7 @@ const resolveInitialTheme = () => {
   return 'light'
 }
 
-const applyTheme = (dark) => {
+const applyTheme = (dark : boolean) => {
   document.documentElement.classList.toggle('dark', dark)
 }
 
