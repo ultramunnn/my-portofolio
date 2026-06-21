@@ -1,8 +1,12 @@
 <script setup>
 import '@/assets/global.css'
-import Index from './pages/Index.vue'
+import { ref } from 'vue'
+import SplashScreen from './components/SplashScreen.vue'
+
+const showSplash = ref(true)
 </script>
 
 <template>
-  <router-view></router-view>
+  <SplashScreen v-if="showSplash" @done="showSplash = false" />
+  <router-view v-else />
 </template>

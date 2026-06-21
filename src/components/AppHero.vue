@@ -69,7 +69,7 @@ onMounted(() => {
 
         <li class="grid grid-cols-[70px_auto] md:grid-cols-[100px_auto] gap-x-2">
           <span>FOCUS</span>
-          <span>: Backend dev, Mobile dev</span>
+          <span>: Backend dev, Software Engineer </span>
         </li>
 
         <li class="grid grid-cols-[70px_auto] md:grid-cols-[100px_auto] gap-x-2">

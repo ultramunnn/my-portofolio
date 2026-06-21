@@ -20,7 +20,7 @@ const year = new Date().getFullYear()
           class="mt-2 hidden w-40 opacity-80 mix-blend-screen dark:block"
         />
         <div class="text-sm font-semibold tracking-wide">Muhammad Shirojul Munir</div>
-        <div class="text-sm font-[courier] text-ink dark:text-ink-dark">Backend dev, Mobile dev</div>
+        <div class="text-sm font-[courier] text-ink dark:text-ink-dark">Backend dev, Software Engineer</div>
       </div>
 
       <div class="md:text-right md:self-end">

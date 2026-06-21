@@ -10,15 +10,17 @@
         </div>
 
         <p class="mt-4 text-xs lg:text-sm text-justify leading-relaxed">
-          I focus on backend system development and mobile application engineering. My work revolves
-          around building structured APIs, managing data flow, and developing mobile applications
-          with clear logic and maintainable code. Currently, I work primarily with backend
-          technologies such as Laravel and Go, alongside mobile development using Flutter, while
-          continuing to refine my understanding of software architecture and system design.
+          I am an Information Technology student at Universitas Brawijaya with a strong interest in
+          backend development and creating innovative technology solutions. I have experience
+          building RESTful APIs, managing databases, and implementing authentication and
+          authorization using modern backend technologies such as Laravel, Node.js, and Go. I am
+          continuously improving my skills in software architecture, clean code, and system design.
+          I have experience in web development, various campus projects, and competition projects,
+          and I am accustomed to working both collaboratively and adaptively.
         </p>
         <p class="mt-4 text-xs lg:text-sm italic text-muted leading-relaxed">
-          Keywords: Backend Development · Mobile App · Laravel · Go · Flutter · API · System Design
-          · Student Developer · Continuous Learning
+          Keywords: Backend Development · Software Engineering · RESTful API · Laravel · Node.js · Go · Database Management
+          · System Design · Clean Code · Student Developer
         </p>
         <a
           class="mt-4 inline-flex items-center rounded-md border border-accent px-3 py-2 text-xs text-accent  transition-colors hover:bg-accent hover:text-paper dark:text-paper dark:hover:bg-accent dark:hover:text-paper"

@@ -7,7 +7,7 @@ const resolveInitialTheme = () => {
   if (saved === 'dark' || saved === 'light') {
     return saved
   }
-  return 'light'
+  return 'dark'
 }
 
 const applyTheme = (dark : boolean) => {
